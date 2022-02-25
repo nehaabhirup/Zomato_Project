@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/97f33a6782.js" crossorigin="anonymous"></script>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <header>
+                <div id="icon">
+                    <h1>Zomato</h1>
+                </div>  
+                <button type="submit" value="login" class="loginbtn"><a href="login.html">Login</a></button>
+            </header>
+            <div id="search">
+               <div id="logo">
+                    <span>E!</span>
+               </div>
+               <div id="heading">
+                   Find the Best Restaurants Near You
+               </div>
+               <div class="dropdown">
+                    <select>
+                        <option>-----PLEASE SELECT CITY-----</option>
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Pune</option>
+                    </select>
+                    <select class="restlist">
+                        <option>-----PLEASE SELECT RESTAURANTS-----</option>
+                        <option></option>
+                    </select>
+               </div>
+            </div>
+            <div id="QuickSearch">
+                <div id="btnContainer">
+                    <button data-toggle="modal" data-target="#myModal1" class="btn btn-info">Filters</button>
+                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-info">Cuisine</button>
+                    <button data-toggle="modal" data-target="#myModal2"class="btn btn-info">Offers</button>
+                    <div id="myModal1" class="modal fade" role="dialog" >
+                        <div class="modal-dialog filter">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal">
+                                        &times;
+                                    </button>
+                                    <h4 class="modal-title">Filters</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="content">
+                                        Restaurant Features<br>
+                                        <input type="checkbox"/>Delivery<br>
+                                        <input type="checkbox"/>Takeout<br>
+                                        <input type="checkbox"/>Table Service<br>
+                                        <input type="checkbox"/>Reservations<br>
+                                    </div>
+                                    <div class="content">
+                                        Meal<br>
+                                        <input type="checkbox"/>Breakfast<br>
+                                        <input type="checkbox"/>Beverage<br>
+                                        <input type="checkbox"/>Lunch<br>
+                                        <input type="checkbox"/>Dinner<br>
+                                    </div>
+                                    <div class="content">
+                                        Cuisine<br>
+                                        <input type="checkbox"/>Chinese<br>
+                                        <input type="checkbox"/>North Indian<br>
+                                        <input type="checkbox"/>South Indian<br>
+                                        <input type="checkbox"/>Fast Food<br>
+                                    </div>
+                                    <div class="content">
+                                        Price<br>
+                                        <input type="checkbox"/>Cheap Eats<br>
+                                        <input type="checkbox"/>Mid-range<br>
+                                        <input type="checkbox"/>Fine Dining<br>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                        Clear
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+                <span id="QuickHeading">
+                    Quick Search
+                </span>
+                <span id="QuickSubHeading">
+                    Discover Restaurants By Meal
+                </span>
+                <div id="mainContainer">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/snacks.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">BreakFast</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your BreakFast Meal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/nightlife.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Nightlife</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Nightlife Club
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/dinner.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Dinner</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Dinner Meal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/drinks.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Drinks</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Drinks
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/lunch.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Lunch</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Lunch Meal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/snacks.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">BreakFast</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your BreakFast Meal
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <footer>
+                <div id="foot">
+                    <div class="left">About</div>
+                    <div class="right">Contact</div>
+                </div>
+                 <div id="heading1">&copy; Developer Neha Abhirup</div>
+                 <div id="social" >
+                     <a href="https://facebook.com" target="_blank">
+                         <img src="image/facebook.png" alt="facebook image" class="slogo"/>
+                     </a>
+                     <a href="https://instagram.com" target="_blank">
+                         <img src="image/insta.png" alt="linkedin image" class="slogo"/>
+                     </a>
+                     <a href="https://youtube.com" target="_blank">
+                         <img src="image/youtube1.png" alt="youtube image" class="slogo"/>
+                     </a>
+                 </div>
+            </footer>
+        </div>
+    </body>
+</html>
