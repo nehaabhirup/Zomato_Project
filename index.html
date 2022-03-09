@@ -1,19 +1,56 @@
 <html>
     <head>
         <title>Homepage</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/97f33a6782.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="index.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .mydark{
+                background-color: black;
+            }
+            .moon{
+                display:none;
+            }
+            .sun{
+                display: block;
+            }
+            .mydark .moon{
+                display: block;
+            }
+            .mydark .sun{
+                display: none;
+            }
+        </style>
+        <script>
+            function changeMode(){
+                var mybody = document.body;
+                mybody.classList.toggle('mydark')
+
+                var x = document.getElementsByClassName("btnIcon");
+                if(x.classList.toggle=='mydark')
+                    x.classList.add("sun");
+                else{
+                    x.classList.add("moon");
+                }
+            }
+            
+        </script>
     </head>
     <body>
         <div>
             <header>
                 <div id="icon">
                     <h1>Zomato</h1>
-                </div>  
-                <button type="submit" value="login" class="loginbtn"><a href="login.html">Login</a></button>
+                </div>
+                <div class="btn-box">
+                    <a href="login.html" class="btn btn-dark">Login</a>
+                    <button  class="btn btnIcon" onclick="changeMode()">
+                        <img class="moon" src="image/moon.png" alt="moon" height="27px" width="35px"></img>
+                        <img class="sun" src="image/sun.png" alt="moon" height="27px" width="35px"></img>
+                    </button>
+                </div>
             </header>
             <div id="search">
                <div id="logo">
