@@ -1,0 +1,247 @@
+body{
+    margin: auto;
+}
+/* header start */
+header{
+    height: 60px;
+    background-color:#e09c83;
+}
+#icon{
+    float: left;
+    margin-left: 4px;
+}
+.btn-box{
+    float: right;
+    margin-top: 1%;
+    margin-right: 5px;
+}
+.btnIcon{
+    background-color: #F7F9F9;
+    height: 35px;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    height: 150px;
+    width: 150px;
+    background-color:rgba(255, 255, 255,1);;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 1%;
+    position: absolute;
+    font-size: 80px;
+    color: #e09c83;
+    animation: revolve 10s infinite;
+}
+
+@keyframes revolve {
+    0% {transform: rotate(30deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+/*#logo:hover{
+    background-color: rgba(255, 255, 255,.5);
+    color: orange;
+    transform: rotate(270deg);
+}*/
+#logo > span{
+    margin-left: 30%;
+    margin-top: 15%;
+    position: absolute;
+}
+#heading{
+    margin-left: 35%;
+    margin-top: 14%;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+}
+.dropdown{
+    height: 50px;
+    width: 45%;
+    margin-left: 30%;
+    margin-top: 20%;
+    position: absolute;
+}
+select{
+    height: 50px;
+    width: 40%;
+    font-size: 12px;
+    text-align: center;
+}
+.restlist{
+    width: 51%;
+}
+
+a{
+    text-decoration: none;
+}
+/* search start */
+#search{
+    height: 400px;
+    background-image: url('image/food-wallpaper.png');
+    background-repeat: no-repeat;
+    /*background-size: cover; */
+    background-size: 100% 352px;
+}
+/* quickstart */
+#QuickSearch{
+    height: 568px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+#btnContainer{
+    margin-left: 4%;
+}
+.btn-info{
+    height: 29px;
+    width: 6%;
+    padding: 2px;
+    text-align: center;
+}
+.content{
+    height: 120px;
+    width: 49%;
+    font-size: 14px;
+    margin-left: 4%;
+}
+#Quickheading{
+    color: orange;
+    margin-top: 1%;
+    margin-left: 4%;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: block;
+}
+#Quickheading:hover{
+    font-size: 25px;
+}
+#QuickSubHeading{
+    margin-left: 4%;
+    line-height: 2;
+    color: gray;
+    font-size: 15px;
+}
+.tileContainer{
+    height: 178px;
+    width: 27%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 4%;
+    box-shadow: 10px 20px 10px gray;
+    /*animation: dance 10s infinite;*/
+}
+.tileContainer:hover{
+    transform: scale(1.1);
+    /*transform: skewY(20deg);
+    transform: skewX(-20deg);*/
+}
+/*@keyframes dance{
+    0% {transform: rotate(-5deg);}
+    25% {transform: rotate(0deg);}
+    50% {transform: rotate(5deg);}
+    60% {transform: scale(1.1);}
+    75% {transform: rotate(0deg);}
+    100% {transform: rotate(-5deg);
+}*/
+.tileComponent1{
+    height: 100px;
+    width: 58%;
+    float: left;
+}
+.tileComponent1 > img{
+    height: 180px;
+    width: 100%;
+}
+.tileComponent2{
+    height: 100px;
+    width: 32%;
+    float: left;
+    margin-left: 7%;
+    margin-top: 18%;
+}
+.componentHeading{
+    font-size: 20px;
+    color: orange;
+}
+.componentHeading > a{
+    color: orange;
+}
+.componentSubHeading{
+    font-size: 13px;
+    color: gray;
+}
+/* footer start */
+footer{
+    height: 150px;
+    width: 100%;
+    background-color:#e09c83 ;
+}
+#foot{
+    height: 35px;
+    width: 15%;
+    margin-top: 4%;
+    margin-left: 46%;
+    text-align: center;
+    position: absolute;
+}
+.left{
+    height: 27px;
+    width: 30%;
+    float: left;
+    font-weight: 500;
+    margin-left: 8%;
+    padding: 1px;
+    border-right: 1px solid gray;
+}
+.right{
+    height: 27px;
+    width: 30%;
+    float: left;
+    padding: 1px;
+}
+#heading1{
+    font-size: 14px;
+    color: black;
+    margin-top: 7%;
+    margin-left: 46%;
+    position: absolute;
+}
+.slogo{
+    height: 25px;
+    width: 25px;
+}
+#social{
+    text-align: center;
+    margin-top: 9%;
+    margin-left: 48% ;
+    position: absolute;
+}
+
+@media screen and (max-width:1400px)
+ {
+    body{
+        background-color: rgb(176, 214, 236);
+    }
+}
+@media screen and (max-width:1300px) {
+    body{
+        background-color: rgb(167, 240, 119);
+    }
+}
+@media screen and (max-width:1200px) {
+    body{
+        background-color: rgb(230, 105, 55);
+    }
+}
+@media screen and (max-width:1000px) {
+    body{
+        background-color: rgb(228, 228, 53);
+    }
+}

@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title>Homepage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="home.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .mydark{
+                background-color: black;
+            }
+            .moon{
+                display:none;
+            }
+            .sun{
+                display: block;
+            }
+            .mydark .moon{
+                display: block;
+            }
+            .mydark .sun{
+                display: none;
+            }
+        </style>
+        <script>
+            function changeMode(){
+                var mybody = document.body;
+                mybody.classList.toggle('mydark')
+
+                var x = document.getElementsByClassName("btnIcon");
+                if(x.classList.toggle=='mydark')
+                    x.classList.add("sun");
+                else{
+                    x.classList.add("moon");
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div>
+            <header>
+                <div id="icon">
+                    <h1>Zomato</h1>
+                </div>
+                <div class="btn-box">
+                    <a href="login.html" class="btn btn-dark">Login</a>
+                    <button  class="btn btnIcon" onclick="changeMode()">
+                        <img class="moon" src="image/moon.png" alt="moon" height="27px" width="35px"></img>
+                        <img class="sun" src="image/sun.png" alt="moon" height="27px" width="35px"></img>
+                    </button>
+                </div>
+            </header>
+            <div id="search">
+               <div id="logo">
+                    <span>E!</span>
+               </div>
+               <div id="heading">
+                   Find the Best Restaurants Near You
+               </div>
+               <div class="dropdown">
+                    <select>
+                        <option>-----PLEASE SELECT CITY-----</option>
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Pune</option>
+                    </select>
+                    <select class="restlist">
+                        <option>-----PLEASE SELECT RESTAURANTS-----</option>
+                        <option></option>
+                    </select>
+               </div>
+            </div>
+            <div id="QuickSearch">
+                
+                <span id="QuickHeading">
+                    Quick Search
+                </span>
+                <span id="QuickSubHeading">
+                    Discover Restaurants By Meal
+                </span>
+                <div id="mainContainer">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/snacks.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">BreakFast</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your BreakFast Meal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/nightlife.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Nightlife</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Nightlife Club
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/dinner.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Dinner</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Dinner Meal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/drinks.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Drinks</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Drinks
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/lunch.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">Lunch</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your Lunch Meal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/snacks.png" alt="snacks"/>
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="./listing/listing.html">BreakFast</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Your BreakFast Meal
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <footer>
+                <div id="foot">
+                    <div class="left">About</div>
+                    <div class="right">Contact</div>
+                </div>
+                 <div id="heading1">&copy; Developer Neha Abhirup</div>
+                 <div id="social" >
+                     <a href="https://facebook.com" target="_blank">
+                         <img src="image/facebook.png" alt="facebook image" class="slogo"/>
+                     </a>
+                     <a href="https://instagram.com" target="_blank">
+                         <img src="image/insta.png" alt="linkedin image" class="slogo"/>
+                     </a>
+                     <a href="https://youtube.com" target="_blank">
+                         <img src="image/youtube1.png" alt="youtube image" class="slogo"/>
+                     </a>
+                 </div>
+            </footer>
+        </div>
+    </body>
+</html>
